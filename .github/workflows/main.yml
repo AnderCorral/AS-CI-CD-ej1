@@ -1,0 +1,13 @@
+name: Workflow ejercicio 1
+
+on: push
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+
+  descargar:
+    uses: action/checkout@v5
+    
+  instalar:
+    run: pip install pytest
